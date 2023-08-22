@@ -1,9 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material";
-import fbIcon from "../Images/Aria1.png";
-import twitterIcon from "../Images/Aria2.png";
-import instaIcon from "../Images/Aria3.png";
+import fbIcon from "../Images/facebook.png";
+import twitterIcon from "../Images/twitter.png";
+import instaIcon from "../Images/instagram.png";
 
 const Footer = () => {
   const CustomContainer = styled(Container)(({ theme }) => ({
@@ -34,7 +34,8 @@ const Footer = () => {
   }));
 
   return (
-    <Box sx={{ py: 10, backgroundColor: "#FFF6B2" }}>
+    <Box>
+    <Box id="footer-section" sx={{ py: 10, backgroundColor: "#9EC2B1" }}>
       <CustomContainer>
         <Box>
           <Typography
@@ -54,7 +55,8 @@ const Footer = () => {
           <br />
           <FooterLink>Contact Us</FooterLink>
         </Box>
-        <Box>
+        <Box> <p style={{display:"flex",justifyContent:"center",}}>
+        </p>
           <Typography
             sx={{
               fontSize: "20px",
@@ -100,6 +102,7 @@ const Footer = () => {
           </IconBox>
         </Box>
       </CustomContainer>
+    </Box>
     </Box>
   );
 };

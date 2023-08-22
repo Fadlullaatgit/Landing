@@ -36,10 +36,10 @@ const Partner = () => {
     }));
 
   return (
-    <Box sx={{mt:10,backgroundColor:"#54BD95",py:10}}>
+    <Box sx={{backgroundColor:"#54BD95",py:10}}>
         <CustomContainer>
             <CustomBox>
-                <img src={Logo} alt="" style={{maxWidth:"300px"}}/>
+                <img src={Logo} alt="" style={{maxWidth:"200px"}}/>
                 <Typography
                 variant='body2' sx={{
                     color:"#7D8589",
@@ -67,11 +67,11 @@ const Partner = () => {
 
         <Container sx={{display:"flex",flexDirection:"column"}}>
             <PartnersBox>
-            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px"}}/>
-            <img src={jci} alt="Companies" height="55px"  style={{marginRight:"20px"}}/>
-            <img src={jci} alt="Companies" height="55px"  style={{marginRight:"20px"}}/>
-            <img src={jci} alt="Companies" height="55px"  style={{marginRight:"20px"}}/>
-            <img src={jci} alt="Companies" height="55px"  style={{marginRight:"20px"}}/>
+            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
+            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
+            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
+            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
+            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
             </PartnersBox>
         </Container>
 

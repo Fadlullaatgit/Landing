@@ -1,10 +1,9 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { Container } from "@mui/system";
 import React from "react";
 import CustomButton from "../../CustomButoon/CustomButton";
-import welcome from "../../Images/Amanda.png";
-import { Title } from "@mui/icons-material";
+import MainPage from "../../Images/MainPage.jpg";
 
 const Welcome = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
@@ -24,14 +23,17 @@ const Welcome = () => {
     fontSize: "64px",
     color: "#2b2e7d",
     fontWeight: "bold",
-    margin: theme.spacing(4, 0, 4, 0),
+    margin: theme.spacing(0, 0, 0, 0),
     [theme.breakpoints.down("sm")]: {
       fontSize: "40px",
     },
   }));
 
   return (
-    <Box sx={{ backgroundColor: "#FFFFFF", minHeight: "80vh" }}>
+    <Box
+      id="home-section"
+      sx={{ backgroundColor: "#fffffF", minHeight: "80vh" }}
+    >
       <Container>
         <CustomBox>
           <Box
@@ -47,42 +49,38 @@ const Welcome = () => {
                 fontSize: "18px",
                 color: "#2b2e7d",
                 fontWeight: "500",
-                mt: 10,
+                mt: 15,
                 mb: 4,
               }}
             >
               Welcome to Healthematics
+              <Title variant="h5">
+                Smart Solutions For Healthcare Professionals
+              </Title>
+              Consultancy at One Click Away, An Innovative Concept
             </Typography>
-            <Title variant="h3">Something as highlighting Content</Title>
-            <Typography
-              variant="body2"
+            <Box
               sx={{
-                fontSize: "18px",
-                color: "#2b2e7d",
-                my: 4,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
-              Description for highlighting
-            </Typography>
-              <Box sx={{
-                display:"flex",
-                justifyContent:"center",
-                alignItems:"center",
-              }}>            <CustomButton
-              backgroundColor="#0F1B4C"
-              color="#fff"
-              buttonText="More About Us"
-              welcomeBtn={true}
-            />
-</Box>
+              {" "}
+              <CustomButton
+                backgroundColor="#0F1B4C"
+                color="#fff"
+                buttonText="More About Us"
+                welcomeBtn={true}
+              />
+            </Box>
           </Box>
           <Box sx={{ flex: "1.25" }}>
             <img
-              src={welcome}
+              src={MainPage}
               alt="welcoming"
-              style={{ maxWidth: "100%", marginBottom: "2rem" }}
+              style={{ maxWidth: "100%"}}
             />
-            the healthematics image with its size
           </Box>
         </CustomBox>
       </Container>

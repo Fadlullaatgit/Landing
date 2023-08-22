@@ -2,6 +2,7 @@ import React from 'react'
 import { Box,Container,styled,Typography } from '@mui/material'
 import CustomCard from '../../CustomCard/CustomCard'
 import { Data } from '../../../StaticData/Data'
+import NewsLetter from '../../NewsLetter/Newsletter'
 
 const Service = () => {
 
@@ -22,7 +23,7 @@ const Service = () => {
     }));
 
   return (
-    <Box sx={{py: 10,backgroundColor:"#f5fafe"}}>
+    <Box sx={{py: 10,backgroundColor:"#f5fafe" }}>
 
             <Container>
                 <PropertiesTextBox>
@@ -39,7 +40,6 @@ const Service = () => {
                             <CustomCard
                             key={HospitalServices.id}
                             img={HospitalServices.img}
-                            price={HospitalServices.price}
                             item={HospitalServices.item}
                             likes={HospitalServices.likes}
                             heart={HospitalServices.heart}
@@ -48,7 +48,8 @@ const Service = () => {
                         ))}
                 </ServicesBox>
             </Container>
-
+            <br /><br />
+            <NewsLetter/>
     </Box>
   )
 }
