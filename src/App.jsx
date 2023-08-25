@@ -5,7 +5,6 @@ import Footer from './Components/Footer/Footer'
 import Partner from './Components/Pages/Partner/Partner'
 import Service from './Components/Pages/Services/Service'
 import About from './Components/Pages/About/About'
-import NewsLetter from './Components/NewsLetter/Newsletter'
 
 function App() {
   return (

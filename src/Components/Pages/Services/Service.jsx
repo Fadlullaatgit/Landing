@@ -31,9 +31,9 @@ const Service = () => {
                     sx={{color:"#000339",fontSize:"35px",fontWeight:"bold",justifyContent:"center",display:"flex"}}>
                             Our Services
                     </Typography>
-                    <Typography sx={{color:"#5A6473",fontSize:"16px",mt:1,justifyContent:"center",display:"flex"}}>
+                    {/* <Typography sx={{color:"#5A6473",fontSize:"16px",mt:1,justifyContent:"center",display:"flex"}}>
                             Use our services and get back your health as wealth
-                    </Typography>
+                    </Typography> */}
                 </PropertiesTextBox>
                 <ServicesBox>
                         {Data.map((HospitalServices)=>(

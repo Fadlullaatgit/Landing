@@ -27,14 +27,14 @@ function Header() {
     setMObileMenu({ ...mobileMenu, [anchor]: open })
   }
 
-  const handleScrollToSection = (sectionId) => () => {
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) {
-      targetSection.scrollIntoView({
-        behavior: 'smooth',
-      });
-    }
-  };
+  // const handleScrollToSection = (sectionId) => () => {
+  //   const targetSection = document.getElementById(sectionId);
+  //   if (targetSection) {
+  //     targetSection.scrollIntoView({
+  //       behavior: 'smooth',
+  //     });
+  //   }
+  // };
 
   const list = (anchor) => (
 
@@ -51,15 +51,15 @@ function Header() {
             <NavBarLink
               key={index}
               variant="body2"
-              onClick={ 
-                item.display === "Contact"
-                  ? handleScrollToSection("footer-section")
-                  : item.display === "About Us"
-                  ? handleScrollToSection("about-section")
-                  : item.display === "Home"
-                  ? handleScrollToSection("home-section")
-                  : undefined
-              }
+              // onClick={ 
+              //   item.display === "Contact"
+              //     ? handleScrollToSection("footer-section")
+              //     : item.display === "About Us"
+              //     ? handleScrollToSection("about-section")
+              //     : item.display === "Home"
+              //     ? handleScrollToSection("home-section")
+              //     : undefined
+              // }
             >
             <ListItem key={item.index} disablePadding>
               <ListItemButton>
@@ -205,15 +205,15 @@ function Header() {
             <NavBarLink
               key={index}
               variant="body2"
-              onClick={ 
-                item.display === "Contact"
-                  ? handleScrollToSection("footer-section")
-                  : item.display === "About Us"
-                  ? handleScrollToSection("about-section")
-                  : item.display === "Home"
-                  ? handleScrollToSection("home-section")
-                  : undefined
-              }
+              // onClick={ 
+              //   item.display === "Contact"
+              //     ? handleScrollToSection("footer-section")
+              //     : item.display === "About Us"
+              //     ? handleScrollToSection("about-section")
+              //     : item.display === "Home"
+              //     ? handleScrollToSection("home-section")
+              //     : undefined
+              // }
             >
               {item.display}
             </NavBarLink>

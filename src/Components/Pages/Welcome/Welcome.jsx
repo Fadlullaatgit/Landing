@@ -20,7 +20,7 @@ const Welcome = () => {
   }));
 
   const Title = styled(Typography)(({ theme }) => ({
-    fontSize: "64px",
+    fontSize: "40px",
     color: "#2b2e7d",
     fontWeight: "bold",
     margin: theme.spacing(0, 0, 0, 0),
@@ -49,12 +49,12 @@ const Welcome = () => {
                 fontSize: "18px",
                 color: "#2b2e7d",
                 fontWeight: "500",
-                mt: 15,
+                mt: 25,
                 mb: 4,
               }}
             >
-              Welcome to Healthematics
-              <Title variant="h5">
+              {/* Welcome to Healthematics */}
+              <Title>
                 Smart Solutions For Healthcare Professionals
               </Title>
               Consultancy at One Click Away, An Innovative Concept
@@ -75,7 +75,7 @@ const Welcome = () => {
               />
             </Box>
           </Box>
-          <Box sx={{ flex: "1.25" }}>
+          <Box sx={{ flex: "1.25", display: "flex", justifyContent: "flex-end"  }}>
             <img
               src={MainPage}
               alt="welcoming"

@@ -4,6 +4,9 @@ import {styled} from '@mui/system';
 import Logo from '../../Images/logo.png';
 import stars from '../../Images/5star.png';
 import jci from '../../Images/JCIlogo.png';
+import Who from '../../Images/WHO.png';
+import CHT from '../../Images/CHT.png';
+import GoogleHealth from '../../Images/GoogleHealth.png';
 
 
 const Partner = () => {
@@ -29,16 +32,16 @@ const Partner = () => {
         },
     }));
 
-    const CustomBox = styled(Box)(({theme}) => ({
-        [theme.breakpoints.down("md")]:{
-            marginBottom:theme.spacing(4),
-        },
-    }));
+    // const CustomBox = styled(Box)(({theme}) => ({
+    //     [theme.breakpoints.down("md")]:{
+    //         marginBottom:theme.spacing(4),
+    //     },
+    // }));
 
   return (
-    <Box sx={{backgroundColor:"#54BD95",py:10}}>
+    <Box sx={{backgroundColor:"#fff",py:5}}>
         <CustomContainer>
-            <CustomBox>
+            {/* <CustomBox>
                 <img src={Logo} alt="" style={{maxWidth:"200px"}}/>
                 <Typography
                 variant='body2' sx={{
@@ -47,10 +50,9 @@ const Partner = () => {
                     fontWeight:"bold",
                     mt:2,
                 }}>
-                    More than 45,000 trust Healthematics
                 </Typography>
-            </CustomBox>
-            <Box>
+            </CustomBox> */}
+            {/* <Box>
             <img src={stars} alt="" style={{maxWidth:"100%"}}/>
                 <Typography
                 variant='body2' sx={{
@@ -61,17 +63,16 @@ const Partner = () => {
                 }}>
                     5-star Rating (2k+ Reviews)
                 </Typography>
-            </Box>
+            </Box> */}
 
         </CustomContainer>
 
         <Container sx={{display:"flex",flexDirection:"column"}}>
             <PartnersBox>
-            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
-            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
-            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
-            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
-            <img src={jci} alt="Companies" height="55px" style={{marginRight:"20px", marginTop:"10px"}}/>
+            <img src={jci} alt="Companies" height="55px" style={{marginRight:"100px", marginTop:"10px"}}/>
+            <img src={Who} alt="Companies" height="100px" style={{marginRight:"100px", marginTop:"-10px"}}/>
+            <img src={CHT} alt="Companies" height="55px" style={{marginRight:"100px", marginTop:"10px"}}/>
+            <img src={GoogleHealth} alt="Companies" height="55px" style={{ marginTop:"10px"}}/>
             </PartnersBox>
         </Container>
 

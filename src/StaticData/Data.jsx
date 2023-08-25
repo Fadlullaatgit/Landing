@@ -22,7 +22,8 @@ export const Data = [
         likes:8,
         heart:9,
         share:10000,
-    },{
+    },
+    {
         id:"3",
         img: MentoringImg,
         price:"5500",
