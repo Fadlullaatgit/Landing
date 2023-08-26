@@ -1,8 +1,8 @@
 import React from 'react'
-import {Box,Container,Typography} from '@mui/material';
+import {Box,Container} from '@mui/material';
 import {styled} from '@mui/system';
-import Logo from '../../Images/logo.png';
-import stars from '../../Images/5star.png';
+// import Logo from '../../Images/logo.png';
+// import stars from '../../Images/5star.png';
 import jci from '../../Images/JCIlogo.png';
 import Who from '../../Images/WHO.png';
 import CHT from '../../Images/CHT.png';

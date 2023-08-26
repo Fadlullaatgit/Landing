@@ -15,15 +15,15 @@ const Footer = () => {
       textAlign: "center",
     },
   }));
-  const FooterLink = styled("span")(({ theme }) => ({
-    fontSize: "16px",
-    color: "#000066",
-    fontWeight: "300",
-    cursor: "pointer",
-    "&:hover": {
-      color: "#66B2FF",
-    },
-  }));
+  // const FooterLink = styled("span")(({ theme }) => ({
+  //   fontSize: "16px",
+  //   color: "#000066",
+  //   fontWeight: "300",
+  //   cursor: "pointer",
+  //   "&:hover": {
+  //     color: "#66B2FF",
+  //   },
+  // }));
   const IconBox = styled(Box)(({ theme }) => ({
     display: "flex",
     alignItems: "center",
