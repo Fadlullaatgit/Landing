@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography,useTheme } from "@mui/material";
 import { styled } from "@mui/system";
 import { Container } from "@mui/system";
 import React from "react";
@@ -6,6 +6,9 @@ import CustomButton from "../../CustomButoon/CustomButton";
 import MainPage from "../../Images/MainPage.jpg";
 
 const Welcome = () => {
+
+  const theme = useTheme();
+
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
@@ -50,7 +53,10 @@ const Welcome = () => {
                 color: "#2b2e7d",
                 fontWeight: "500",
                 mt: 25,
-                mb: 4,
+                mb: 3,
+                [theme.breakpoints.down('md')]:{
+                  mt:5,
+                }
               }}
             >
               {/* Welcome to Healthematics */}

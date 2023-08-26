@@ -69,10 +69,10 @@ const Partner = () => {
 
         <Container sx={{display:"flex",flexDirection:"column"}}>
             <PartnersBox>
-            <img src={jci} alt="Companies" height="55px" style={{marginRight:"100px", marginTop:"10px"}}/>
-            <img src={Who} alt="Companies" height="100px" style={{marginRight:"100px", marginTop:"-10px"}}/>
-            <img src={CHT} alt="Companies" height="55px" style={{marginRight:"100px", marginTop:"10px"}}/>
-            <img src={GoogleHealth} alt="Companies" height="55px" style={{ marginTop:"10px"}}/>
+            <img src={jci} alt="Companies" height="55px" style={{marginLeft:"50px",marginRight:"50px", marginTop:"10px"}}/>
+            <img src={Who} alt="Companies" height="100px" style={{marginLeft:"50px",marginRight:"50px", marginTop:"-10px"}}/>
+            <img src={CHT} alt="Companies" height="55px" style={{marginLeft:"50px",marginRight:"50px", marginTop:"10px"}}/>
+            <img src={GoogleHealth} alt="Companies" height="55px" style={{marginLeft:"50px",marginRight:"50px", marginTop:"10px"}}/>
             </PartnersBox>
         </Container>
 
