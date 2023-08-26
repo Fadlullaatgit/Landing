@@ -1,4 +1,4 @@
-import { Box, Typography,useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { styled } from "@mui/system";
 import { Container } from "@mui/system";
 import React from "react";
@@ -6,7 +6,6 @@ import CustomButton from "../../CustomButoon/CustomButton";
 import MainPage from "../../Images/MainPage.jpg";
 
 const Welcome = () => {
-
   const theme = useTheme();
 
   const CustomBox = styled(Box)(({ theme }) => ({
@@ -54,16 +53,17 @@ const Welcome = () => {
                 fontWeight: "500",
                 mt: 25,
                 mb: 3,
-                [theme.breakpoints.down('md')]:{
-                  mt:5,
-                }
+                ml: "-50px",
+                [theme.breakpoints.down("md")]: {
+                  mt: 5,
+                  ml: "50px",
+                },
               }}
             >
               {/* Welcome to Healthematics */}
-              <Title>
-                Smart Solutions For Healthcare Professionals
-              </Title>
-              Consultancy at One Click Away, An Innovative Concept
+              <Title>Smart Solutions For Healthcare Professionals</Title>
+              Experience the future of consultancy with One Click Away: Where
+              innovation meets expertise effortlessly.{" "}
             </Typography>
             <Box
               sx={{
@@ -81,12 +81,18 @@ const Welcome = () => {
               />
             </Box>
           </Box>
-          <Box sx={{ flex: "1.25", display: "flex", justifyContent: "flex-end"  }}>
-            <img
-              src={MainPage}
-              alt="welcoming"
-              style={{ maxWidth: "100%"}}
-            />
+          <Box
+            sx={{
+              flex: "1.25",
+              display: "flex",
+              justifyContent: "flex-end",
+              marginInlineEnd:"-80px",
+              "@media (max-width: 960px)": {
+                marginInlineEnd: 0,
+              },
+            }}
+          >
+            <img src={MainPage} alt="welcoming" style={{ maxWidth: "100%" }} />
           </Box>
         </CustomBox>
       </Container>

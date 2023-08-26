@@ -42,14 +42,13 @@ const About = () => {
         </Typography>
         <CustomBox>
           <img src={aboutUs} alt=""/>
-
         <Typography
           sx={{
             color: "#5A6473",
             fontSize: "16px",
             mt: 6,
-            justifyContent: "center",
             display: "flex",
+            textAlign:"left",
           }}
         >
           <p>

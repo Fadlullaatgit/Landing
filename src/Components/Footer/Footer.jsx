@@ -34,13 +34,13 @@ const Footer = () => {
   }));
 
   return (
-    <Box id="footer-section" sx={{ py: 10, backgroundColor: "#88ABEB" }}>
+    <Box id="footer-section" sx={{ py: 10, backgroundColor: "#365BC2" }}>
       <CustomContainer>
         <Box>
           <Typography
             sx={{
               fontSize: "20px",
-              color: "#1C1C1D",
+              color: "#ffffff",
               fontWeight: "700",
               mb: 2,
             }}
@@ -48,12 +48,12 @@ const Footer = () => {
             Contact Us
           </Typography>
 
-          <Typography variant="body1">
+          <Typography variant="body1" sx={{color: "#ffffff"}}> 
             If you have any questions or inquiries, feel free to get in touch
             with us using the contact details below:
           </Typography><br />
 
-          <Typography variant="body1">
+          <Typography variant="body1" sx={{color: "#ffffff"}}>
             Phone: 973-22334455
             <br />
             Email: info@healthematics.com
@@ -102,7 +102,7 @@ const Footer = () => {
           <Typography
             sx={{
               fontSize: "20px",
-              color: "#1C1C1D",
+              color: "#ffffff",
               fontWeight: "700",
               mb: 2,
             }}

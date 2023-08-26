@@ -29,8 +29,8 @@ const NewsLetter = ({ title }) => {
       {/* <h2>{title}</h2> */}
       <Card
         sx={{
-          backgroundColor: "#0093E9",
-          backgroundImage: "linear-gradient(180deg, #0093E9 0%,  #88abeb 100%)",
+          backgroundColor: "#365BC2",
+          backgroundImage: "linear-gradient(180deg, #365BC2 0%,  #8AB7FF 100%)",
         }}
       >
         <br />
