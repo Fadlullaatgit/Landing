@@ -108,7 +108,7 @@ function Header() {
     alignItems: "center",
     justifyContent: "flex-end",
     gap: theme.spacing(3),
-    marginLeft: "750px", [theme.breakpoints.down("md")]: {
+    marginLeft: "800px", [theme.breakpoints.down("md")]: {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",

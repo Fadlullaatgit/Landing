@@ -53,10 +53,10 @@ const Welcome = () => {
                 fontWeight: "500",
                 mt: 25,
                 mb: 3,
-                ml: "-50px",
+                ml: "-79px",
                 [theme.breakpoints.down("md")]: {
                   mt: 5,
-                  ml: "50px",
+                  ml: "0px",
                 },
               }}
             >
